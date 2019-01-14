@@ -1,0 +1,7 @@
+name: WarfareTroll
+version: 1.0
+author: Yusari
+main: cz.yusari.wt.Main
+description: Warfare Trolling nothing more
+commands:
+  wt:
