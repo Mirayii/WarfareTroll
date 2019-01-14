@@ -29,6 +29,7 @@ public class MainMenuGUI implements Listener {
         inv.setItem(10, blocks);
         ItemStack items = ItemFactory.create(Material.MOB_SPAWNER, (byte) 0, "§aTroll Items", "§7Kliknutím otevřeš!");
         inv.setItem(11, items);
+        p.openInventory(inv);
     }
     @EventHandler
     private void onDrop(PlayerDropItemEvent e) {
@@ -54,7 +55,7 @@ public class MainMenuGUI implements Listener {
                 p.sendMessage("§3WarfareTroll §8┃ §aOtevřeno menu Blocks");
             }
             if (e.getSlot() == 11) {
-                TrollBlocks.openMenu(p);
+                TrollItems.openMenu(p);
                 p.sendMessage("§3WarfareTroll §8┃ §aOtevřeno menu Items");
             }
         }

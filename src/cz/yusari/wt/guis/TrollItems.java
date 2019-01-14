@@ -25,6 +25,7 @@ public class TrollItems implements Listener {
             }
             ItemStack pigfountain = ItemFactory.create(Material.MONSTER_EGG, (byte) 0, "§aPig Fountain", "§8• §7Rozhodí prasata v okolí jako fontána");
             inv.setItem(10, pigfountain);
+            p.openInventory(inv);
         }
         @EventHandler
         private void onDrop(PlayerDropItemEvent e) {

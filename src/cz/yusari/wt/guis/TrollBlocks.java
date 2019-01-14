@@ -27,6 +27,7 @@ public class TrollBlocks implements Listener {
         inv.setItem(10, diablock);
         ItemStack tnt = ItemFactory.create(Material.TNT, (byte) 0, "§aBreak lit TNT", "§8• §7Po zníčení tohoto TNT bude", "§7automaticky TNT zapáleno");
         inv.setItem(11, tnt);
+        p.openInventory(inv);
     }
     @EventHandler
     private void onDrop(PlayerDropItemEvent e) {
